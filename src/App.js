@@ -12,19 +12,19 @@ class Board extends React.Component {
     return (
       <div>
         <div className="status">{status}</div>
-        <div>
+        <div className='boarder-row'>
           <div>{this.renderSquare(1)}</div>
           <div>{this.renderSquare(2)}</div>
           <div>{this.renderSquare(3)}</div>
         </div>
 
-        <div>
+        <div className='boarder-row'>
           <div>{this.renderSquare(4)}</div>
           <div>{this.renderSquare(5)}</div>
           <div>{this.renderSquare(6)}</div>
         </div>
 
-        <div>
+        <div className='boarder-row'>
           <div>{this.renderSquare(7)}</div>
           <div>{this.renderSquare(8)}</div>
           <div>{this.renderSquare(9)}</div>
@@ -64,8 +64,9 @@ function App() {
                 rel="noopener noreferrer"
               >
             Learn React
+            </a>
             <Board></Board>
-          </a>
+          
         </p>
       </header>
     </div>
